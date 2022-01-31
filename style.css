@@ -1,0 +1,235 @@
+:root {
+  --accents: #ffd100; /*rgb(255, 209, 0)*/
+  --black: #000;
+  --white: #fff;
+  --lightgray:#D3D3D3;
+  --text: #333333;
+  --transition: 0.3s ease-in-out;
+  --bodyFont: 16px;
+}
+
+/* BASIC STYLES */
+
+body {
+  font-size: var(--bodyFont);
+}
+header {
+  position: relative;
+}
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover {
+  text-decoration: none;
+}
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid var(--accents);
+  letter-spacing: 1px;
+  color: var(--text);
+  transform: skew(-10deg);
+  text-transform: uppercase;
+}
+.fullBtn {
+  background-color: var(--accents);
+}
+.fullBtn:hover {
+  background-color: var(--black);
+  color: var(--accents);
+  border: 1px solid var(--black);
+}
+.borderBtn {
+  background-color: transparent;
+  color: var(--accents);
+  border: 1px solid var(--accents);
+}
+.borderBtn:hover {
+  background-color: var(--accents);
+  color: var(--black);
+}
+.py {
+    padding: 100px 0;
+}
+
+/* NAV */
+
+.navbar-brand img{
+width: 10%;
+}
+nav .nav-link{
+color: var(--white);
+text-transform: uppercase;
+text-shadow: 0 0 2px var(--black);
+font-weight: bolder;
+}
+nav .nav-link:hover{
+    color: var(--accents);
+}
+nav .active::after{
+    display: block;
+    content: "";
+    height: 2px;
+    background: var(--white);
+}
+.navbar-fixed-top.scrolled {
+    background-color: var(--accents) !important;
+    transition: 200ms linear;
+  }
+
+/* MAIN HEADER */
+.main img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.main .col-md-7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main h1{
+    color: var(--accents);
+    font-style: italic;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 1;
+}
+.main p{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+/* intro */
+.intro{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+.intro h2{
+    text-align: center;
+   margin-top: 50px;
+   font-size: 3rem;
+   font-weight: bolder;
+   font-style: italic;
+}
+/* carousel */
+.carousel-caption.up{
+top:20px;
+}
+.up h3{
+    font-size: 4rem;
+    font-style: italic;
+    text-shadow: 0 0 2px var(--black);
+}
+/* plan */
+.plan li::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; 
+    font-weight: 900;
+    content:"\f70c";
+    color:var(--accents);
+    margin-left: 5px;
+    text-shadow: 0 0 2px var(--black);
+}
+.plan ul{
+    line-height: 2;
+    padding: 30px 0;
+}
+.plan .col-md-4:nth-child(2){
+    box-shadow: 0 0 30px var(--lightgray);
+}
+/* mapa*/
+.map{
+    position: relative;
+}
+.map h2{
+position: absolute;
+top:50px;
+right: 10%;
+text-shadow: 0 0 2px var(--white);
+font-weight: bolder;
+
+}
+.map article{
+position: absolute;
+bottom:50px;
+right: 5%;
+background: var(--accents);
+padding: 30px;
+width: 30%;
+border: 1px solid var(--black);
+}
+/* blog */
+
+/***************
+blog
+***************/
+.blog .col-md-4:nth-child(2),
+.blog .col-md-4:nth-child(3)  {
+    position: relative;
+}
+.blog h3 {
+    position: absolute;
+    top: -25px;
+    left: 30px;
+    background: var(--accents);
+    color: var(--white);
+    padding: 5px 15px;
+    transform: skewX(-10deg);
+    text-shadow: var(--textShadow);
+}
+.blog .button{
+    position: absolute;
+    bottom: -25px;
+    right: 30px;
+    background: var(--accents);
+    color: var(--black);
+    transform: skew(-10deg);
+}
+.blog .poslednjiClanak{
+    color: var(--accents);
+    font-weight: bolder;
+}
+/* subscribe */
+.subscribe{
+    background: var(--accents);
+    font-style: italic;
+}
+.subscribe h2{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.subscribe .subscribeBtn{
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-weight: bolder;
+}
+.subscribe .subscribeBtn:hover{
+    background: var(--white);
+    border: 1px solid var(--white);
+    color: var(--black);
+    font-weight: bolder;
+}
+.subscribe input{
+    padding: 10px 30px;
+    transform: skewX(-10deg);
+}
+/* footer */
+footer{
+    background: var(--black);
+    color: var(--white);
+}
+footer a{
+    color: var(--white);
+}
+footer a:hover{
+    color: var(--accents);
+}
+footer img{
+    width: 50%;
+}
+footer ul{
+    line-height: 2;
+}
