@@ -2,7 +2,7 @@
   --accents: #ffd100; /*rgb(255, 209, 0)*/
   --black: #000;
   --white: #fff;
-  --lightgray:#D3D3D3;
+  --lightgray: #d3d3d3;
   --text: #333333;
   --transition: 0.3s ease-in-out;
   --bodyFont: 16px;
@@ -50,33 +50,33 @@ a:hover {
   color: var(--black);
 }
 .py {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 /* NAV */
 
-.navbar-brand img{
-width: 10%;
+.navbar-brand img {
+  width: 10%;
 }
-nav .nav-link{
-color: var(--white);
-text-transform: uppercase;
-text-shadow: 0 0 2px var(--black);
-font-weight: bolder;
+nav .nav-link {
+  color: var(--white);
+  text-transform: uppercase;
+  text-shadow: 0 0 2px var(--black);
+  font-weight: bolder;
 }
-nav .nav-link:hover{
-    color: var(--accents);
+nav .nav-link:hover {
+  color: var(--accents);
 }
-nav .active::after{
-    display: block;
-    content: "";
-    height: 2px;
-    background: var(--white);
+nav .active::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background: var(--white);
 }
 .navbar-fixed-top.scrolled {
-    background-color: var(--accents) !important;
-    transition: 200ms linear;
-  }
+  background-color: var(--accents) !important;
+  transition: 200ms linear;
+}
 
 /* MAIN HEADER */
 .main img {
@@ -90,76 +90,92 @@ nav .active::after{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.main h1{
-    color: var(--accents);
-    font-style: italic;
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    line-height: 1;
+.main h1 {
+  color: var(--accents);
+  font-style: italic;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  line-height: 1;
 }
-.main p{
-    font-size: 1.2rem;
-    font-weight: bolder;
+.main p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+/* HEADERS*/
+
+.headers img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.headers h1 {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--accents);
+  padding: 10px 30px;
 }
 /* intro */
-.intro{
-    display: flex;
-    align-items: center;
-    padding: 100px;
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 100px;
 }
-.intro h2{
-    text-align: center;
-   margin-top: 50px;
-   font-size: 3rem;
-   font-weight: bolder;
-   font-style: italic;
+.intro h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-style: italic;
 }
 /* carousel */
-.carousel-caption.up{
-top:20px;
+.carousel-caption.up {
+  top: 20px;
 }
-.up h3{
-    font-size: 4rem;
-    font-style: italic;
-    text-shadow: 0 0 2px var(--black);
+.up h3 {
+  font-size: 4rem;
+  font-style: italic;
+  text-shadow: 0 0 2px var(--black);
 }
 /* plan */
-.plan li::after{
-    font-family: "Font Awesome 5 Free"; font-weight: 900; 
-    font-weight: 900;
-    content:"\f70c";
-    color:var(--accents);
-    margin-left: 5px;
-    text-shadow: 0 0 2px var(--black);
+.plan li::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-weight: 900;
+  content: "\f70c";
+  color: var(--accents);
+  margin-left: 5px;
+  text-shadow: 0 0 2px var(--black);
 }
-.plan ul{
-    line-height: 2;
-    padding: 30px 0;
+.plan ul {
+  line-height: 2;
+  padding: 30px 0;
 }
-.plan .col-md-4:nth-child(2){
-    box-shadow: 0 0 30px var(--lightgray);
+.plan .col-md-4:nth-child(2) {
+  box-shadow: 0 0 30px var(--lightgray);
 }
 /* mapa*/
-.map{
-    position: relative;
+.map {
+  position: relative;
 }
-.map h2{
-position: absolute;
-top:50px;
-right: 10%;
-text-shadow: 0 0 2px var(--white);
-font-weight: bolder;
-
+.map h2 {
+  position: absolute;
+  top: 50px;
+  right: 10%;
+  text-shadow: 0 0 2px var(--white);
+  font-weight: bolder;
 }
-.map article{
-position: absolute;
-bottom:50px;
-right: 5%;
-background: var(--accents);
-padding: 30px;
-width: 30%;
-border: 1px solid var(--black);
+.map article {
+  position: absolute;
+  bottom: 50px;
+  right: 5%;
+  background: var(--accents);
+  padding: 30px;
+  width: 30%;
+  border: 1px solid var(--black);
 }
 /* blog */
 
@@ -167,69 +183,136 @@ border: 1px solid var(--black);
 blog
 ***************/
 .blog .col-md-4:nth-child(2),
-.blog .col-md-4:nth-child(3)  {
-    position: relative;
+.blog .col-md-4:nth-child(3) {
+  position: relative;
 }
 .blog h3 {
-    position: absolute;
-    top: -25px;
-    left: 30px;
-    background: var(--accents);
-    color: var(--white);
-    padding: 5px 15px;
-    transform: skewX(-10deg);
-    text-shadow: var(--textShadow);
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  background: var(--accents);
+  color: var(--white);
+  padding: 5px 15px;
+  transform: skewX(-10deg);
+  text-shadow: var(--textShadow);
 }
-.blog .button{
-    position: absolute;
-    bottom: -25px;
-    right: 30px;
-    background: var(--accents);
-    color: var(--black);
-    transform: skew(-10deg);
+.blog .button {
+  position: absolute;
+  bottom: -25px;
+  right: 30px;
+  background: var(--accents);
+  color: var(--black);
+  transform: skew(-10deg);
 }
-.blog .poslednjiClanak{
-    color: var(--accents);
-    font-weight: bolder;
+.blog .poslednjiClanak {
+  color: var(--accents);
+  font-weight: bolder;
 }
 /* subscribe */
-.subscribe{
-    background: var(--accents);
-    font-style: italic;
+.subscribe {
+  background: var(--accents);
+  font-style: italic;
 }
-.subscribe h2{
-    font-weight: bolder;
-    font-size: 40px;
+.subscribe h2 {
+  font-weight: bolder;
+  font-size: 40px;
 }
-.subscribe .subscribeBtn{
-    border: 1px solid var(--white);
-    color: var(--white);
-    font-weight: bolder;
+.subscribe .subscribeBtn {
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-weight: bolder;
 }
-.subscribe .subscribeBtn:hover{
-    background: var(--white);
-    border: 1px solid var(--white);
-    color: var(--black);
-    font-weight: bolder;
+.subscribe .subscribeBtn:hover {
+  background: var(--white);
+  border: 1px solid var(--white);
+  color: var(--black);
+  font-weight: bolder;
 }
-.subscribe input{
-    padding: 10px 30px;
-    transform: skewX(-10deg);
+.subscribe input {
+  padding: 10px 30px;
+  transform: skewX(-10deg);
 }
 /* footer */
-footer{
-    background: var(--black);
-    color: var(--white);
+footer {
+  background: var(--black);
+  color: var(--white);
 }
-footer a{
-    color: var(--white);
+footer a {
+  color: var(--white);
 }
-footer a:hover{
+footer a:hover {
+  color: var(--accents);
+}
+footer img {
+  width: 50%;
+}
+footer ul {
+  line-height: 2;
+}
+/* Programi*/
+.programiList .card {
+  box-shadow: 0 0 10px var(--lightgray);
+  transition: var(--transition);
+}
+.programiList .card:hover {
+  box-shadow: 0 0 30px var(--lightgray);
+  transition: var(--transition);
+}
+.programiList .card-title {
+  background: var(--accents);
+  color: var(--black);
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: -50px;
+}
+.programiList .button {
+  position: relative;
+  top: 45px;
+}
+/* Blog */
+.blogList .card {
+  position: relative;
+  margin-bottom: 100px;
+}
+.blogList .card:last-child {
+  margin: 0;
+}
+.blogList .card-title {
+  background: var(--accents);
+  text-align: center;
+  padding: 5px 20px;
+  display: inline-block;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -20px;
+}
+.blogList .button {
+  position: relative;
+  top: 45px;
+}
+/* widget */
+.widget {
+  background: var(--black);
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  color: var(--white);
+}
+.widget a{
     color: var(--accents);
 }
-footer img{
-    width: 50%;
+.widget a:hover{
+    background: var(--accents);
+    color: var(--black);
+    display: block;
+    text-indent: 20px;
+
 }
-footer ul{
-    line-height: 2;
+.widget h4::after{
+    background: var(--white);
+    display: block;
+    content: "";
+    height: 1px;
+    margin-top: 10px;
 }
