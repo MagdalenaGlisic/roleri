@@ -163,7 +163,7 @@ nav .active::after {
 }
 .map h2 {
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 10%;
   text-shadow: 0 0 2px var(--white);
   font-weight: bolder;
